@@ -1,0 +1,75 @@
+.footer {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background: #222;
+  overflow: hidden;
+}
+
+.footer-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+/* Đặt phần icon dưới ảnh */
+.footer-social {
+  background: #fff;
+  width: 100%;
+  padding: 40px 0 24px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  z-index: 2;
+  position: relative;
+}
+
+.footer-icon {
+  color: #222;
+  font-size: 2.2rem;
+  margin: 0 12px;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.footer-icon:hover {
+  color: #ff9800;
+}
+
+.footer-copyright {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 32px;
+  color: #222;
+  font-size: 1.1rem;
+  z-index: 2;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .footer-social {
+    gap: 20px;
+    padding: 24px 0 16px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    min-height: 40vh;
+  }
+  .footer-social {
+    gap: 10px;
+    padding: 16px 0 10px 0;
+  }
+  .footer-icon {
+    font-size: 1.4rem;
+    margin: 0 4px;
+  }
+  .footer-copyright {
+    font-size: 0.9rem;
+    padding-bottom: 12px;
+  }
+}

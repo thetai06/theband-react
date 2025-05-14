@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import Slider from './components/Slider';
 import Band from './components/Band';
 import Tour from './components/Tour';
 import Contact from './components/Contact';
@@ -9,6 +10,7 @@ function App() {
   return (
     <div>
       <Header />
+      <Slider />
       <Band />
       <Tour />
       <Contact />
